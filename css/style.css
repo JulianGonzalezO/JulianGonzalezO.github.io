@@ -1,0 +1,256 @@
+/* fuentes personalizadas */
+@font-face {
+	font-family: UbuntuBold;
+	src: url('fuentes/Ubuntu-Bold.ttf') format('truetype');
+}
+
+*{
+	font-family: UbuntuBold;
+}
+
+h1,h2{
+	transform: translate(150px, 0px);
+	color: white;
+	position: relative;
+	font-size: 20px;
+	display: inline;
+	margin-top: 10px;
+	letter-spacing: 1px;
+	top: 20%;
+	float: left;
+	text-shadow: 3px 3px 5px black;
+}
+
+/*article p,h3,h4{
+	font-family: UbunutuBlond;
+	text-shadow: 1px 1px 2px black;
+}*/
+
+/*Estilo de menú de navegación*/
+nav{
+	display: inline;
+	float: right;
+	margin: 20px;
+
+}
+nav ul{
+	display: inline;
+	margin-left: 0px;
+	padding-left: 0px;
+	font-size: 15px;
+	width: 50%;
+	background: gray;
+	color: white;
+	position: relative;
+}
+nav ul li{
+	display: inline;
+	text-align: center;
+}
+
+nav ul li a{
+	background: rgba(255,100,0,0.5);
+	color: white;
+	float: right;
+	text-decoration: none;
+	border: 1px solid white;
+	border-radius: 0px 10px 0px 10px;
+	box-shadow: 0px 0px 5px;
+	width: 80px;
+}
+
+nav ul li a:hover{
+	background: white;
+	color: black;
+	box-shadow: 0px 0px 25px white;
+}
+/*Maquetación body*/
+body{
+	margin: 0px;
+	background: url('../img/body.jpg');
+	text-align: center;
+
+
+}
+
+#principal{
+	margin: auto;
+	background: gray;
+	height: 100%;
+	width: 80%;
+	text-align: left;
+	background: rgba(255,255,255,0.2);
+	position: relative;
+
+}
+
+#banner{
+	width: 100%;
+	height: 150px;
+	background: rgba(255,255,255,0.1);
+	position: absolute;
+}
+
+header{
+	display: table;
+	margin: 0;
+	width: 100%;
+	height: 100px;
+	text-align: left;
+	background: rgba(255,50,0,0.8);
+	overflow: hidden;
+	border: 2px solid white;
+	border-radius: 10px 32px 0px 0px;
+	box-shadow: 0px 0px 30px;
+}
+
+footer{
+	width: 100%;
+	height: 100px;
+	background: darkgrey;
+	text-align:center;
+	border: 2px solid white;
+	border-radius: 0px 0px 40px 40px;
+	box-shadow: 0px 0px 30px;
+
+}
+#logo{
+	width: 100px;
+	height: 100px;
+	display: inline;
+	position: relative;
+	float: left;
+}
+
+#contenido{
+	width: 100%;
+	border: 2px solid white;
+	box-shadow: 0px 0px 30px;
+}
+article{
+	margin: 20px;
+	width: 55%;
+	display: table;
+	height: 100%;
+	border: 1px solid white;
+	border-radius: 0px 25px 0px 25px;
+	padding: 10px 10px 10px 150px;
+	box-shadow: 3px 3px 10px black;
+	opacity: 0.5;
+	transition:background 1s, color 1s, opacity 1s, box-shadow 1s, transform 1s;
+	transform: scale(1,1);
+}
+
+article:hover{
+	box-shadow: 0px 0px 20px white;
+	opacity: 1;
+	transform: scale(1.1,1.1);
+	background-color: rgba(255,255,255,0.5);
+}
+
+aside{
+	float: right;
+	width: 20%;
+	display: inline-table;
+	padding: 10px;
+	border: 1px solid white;
+	margin: 20px;
+	border-radius: 0px 25px 0px 25px;
+	box-shadow: 3px 3px 10px black;
+}
+aside ul{
+	width: 100%;
+	height: 100%;
+	padding-left: 0;
+	padding-right: 0;
+	color: black;
+	float: left;
+	font-size: 15px;
+	list-style-type: none;
+}
+aside ul li{
+	width: 100%;
+	text-decoration: none;
+	border: 1px solid white;
+}
+aside ul li a{
+	width: 100%
+	height:30px;
+	text-decoration: none;
+}
+time{
+	font-family: Verdana;
+	font-size: 15px;
+}
+#sobremi{
+	width: 100%;
+	height: 130px;
+	background: rgba(0,0,0,0.5);
+	color: white;
+	font-size: 15px;
+	text-align: justify;
+	overflow: hidden;
+}
+
+#sobremi p{
+	padding: 20px;
+
+}
+#mifoto{
+	float: left;
+	margin: 20px;
+	text-align: left;
+	width: 100px;
+	height: 100px;
+	columns: white;
+	font-size: 20px;
+	font-family: courier;
+	background-image: url('../photo/perfil.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: box;
+	border: 1px solid white;
+	border-radius: 0px 10px 0px 10px;
+	box-shadow: 0px 0px 10px white;
+	animation: efecto 5s;
+	-webkit-animation: efecto 5s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes efecto{
+	0%{box-shadow: 0px 0px 10px white;}
+	50%{box-shadow: 0px 0px 50px white;}
+	100%{box-shadow: 0px 0px 10px white;}
+}
+@-webkit-keyframes efecto{
+	0%{box-shadow: 0px 0px 10px white;}
+	50%{box-shadow: 0px 0px 50px white;}
+	100%{box-shadow: 0px 0px 10px white;}
+}
+
+.milogo{
+	float: left;
+	margin: 20px;
+	text-align: left;
+	width: 100px;
+	height: 100px;
+	columns: white;
+	font-size: 20px;
+	font-family: courier;
+	background-image: url('../photo/perfil.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: box;
+	border: 1px solid white;
+	border-radius: 0px 10px 0px 10px;
+	box-shadow: 0px 0px 10px white;
+	position: absolute;
+	transform: translate(-140px,0px);
+}
+#hs{
+	background-image: url('../photo/hs.png');
+}
+#music{
+	background-image: url('../photo/music.jpg');
+}
