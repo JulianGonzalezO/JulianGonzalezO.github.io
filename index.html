@@ -2,6 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home Principal</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -46,7 +48,7 @@
           <div class="panel-heading">IPERC</div>
           <div class="panel-body">
             <div class="table-responsive table-container">
-              <table class="table table-striped" style="font-size: 10px;">
+              <table class="table table-striped" >
               <thead>
                 <tr>
                   <th>Matriz</th>
@@ -115,10 +117,10 @@
           <div class="panel-heading">REQUISITOS LEGALES</div>
           <div class="panel-body">
             <div class="row vertical-align">
-              <div class="col-sm-6">
+              <div class="col-xs-6">
                 <canvas id="reqChart" class="chart" width="100px" height="100px"></canvas>
               </div>
-              <div class="col-sm-6" style="padding: 0;">
+              <div class="col-xs-6" style="padding: 0;">
                 <font size="7"><strong>30</strong></font><font size="5"> requisitos</font>
               </div>
             </div>
@@ -131,44 +133,46 @@
         <div class="panel panel-primary">
           <div class="panel-heading">AUDITORIAS</div>
           <div class="panel-body">
-            <table class="table table-striped" style="font-size: 10px;">
-              <thead>
-                <tr>
-                  <th></th>
-                  <th>TITULO</th>
-                  <th>FECHA</th>
-                  <th>NC</th>
-                  <th>OBS</th>
-                  <th>ACC</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><img src="./images/sem-ver.png" alt="ver"></td>
-                  <td>AUDITORIA SEM 1</td>
-                  <td>10 Feb</td>
-                  <td>5</td>
-                  <td>3</td>
-                  <td>50 <span class="pie">5/10</span></td>
-                </tr>
-                <tr>
-                  <td><img src="./images/sem-roj.png" alt="roj"></td>
-                  <td>AUDITORIA SEM 2</td>
-                  <td>30 Ago</td>
-                  <td>3</td>
-                  <td>5</td>
-                  <td>10 <span class="pie">1/10</span></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="table table-striped" >
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>TITULO</th>
+                    <th>FECHA</th>
+                    <th>NC</th>
+                    <th>OBS</th>
+                    <th>ACC</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><img src="./images/sem-ver.png" alt="ver"></td>
+                    <td>AUDITORIA SEM 1</td>
+                    <td>10 Feb</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>50 <span class="pie">5/10</span></td>
+                  </tr>
+                  <tr>
+                    <td><img src="./images/sem-roj.png" alt="roj"></td>
+                    <td>AUDITORIA SEM 2</td>
+                    <td>30 Ago</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>10 <span class="pie">1/10</span></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
@@ -176,40 +180,42 @@
         <div class="panel panel-primary">
           <div class="panel-heading">FISCALIZACIONES</div>
           <div class="panel-body">
-            <table class="table table-striped" style="font-size: 10px;">
-              <thead>
-                <tr>
-                  <th>TITULO</th>
-                  <th>FECHA</th>
-                  <th>NC</th>
-                  <th>OBS</th>
-                  <th>ACC</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>AUDITORIA SEM 1</td>
-                  <td>10 Feb</td>
-                  <td>5</td>
-                  <td>3</td>
-                  <td>50 <span class="pie">5/10</span></td>
-                </tr>
-                <tr>
-                  <td>AUDITORIA SEM 2</td>
-                  <td>30 Ago</td>
-                  <td>3</td>
-                  <td>5</td>
-                  <td>10 <span class="pie">1/10</span></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="table table-striped" >
+                <thead>
+                  <tr>
+                    <th>TITULO</th>
+                    <th>FECHA</th>
+                    <th>NC</th>
+                    <th>OBS</th>
+                    <th>ACC</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>AUDITORIA SEM 1</td>
+                    <td>10 Feb</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>50 <span class="pie">5/10</span></td>
+                  </tr>
+                  <tr>
+                    <td>AUDITORIA SEM 2</td>
+                    <td>30 Ago</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>10 <span class="pie">1/10</span></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
@@ -217,40 +223,42 @@
         <div class="panel panel-primary">
           <div class="panel-heading">SIMULACROS</div>
           <div class="panel-body">
-            <table class="table table-striped" style="font-size: 10px;">
-              <thead>
-                <tr>
-                  <td></td>
-                  <th>TITULO</th>
-                  <th>FECHA</th>
-                  <th>OBS</th>
-                  <th>ACC</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><img src="./images/sem-ver.png" alt="ver"></td>
-                  <td>AUDITORIA SEM 1</td>
-                  <td>10 Feb</td>
-                  <td>3</td>
-                  <td>50 <span class="pie">5/10</span></td>
-                </tr>
-                <tr>
-                  <td><img src="./images/sem-roj.png" alt="roj"></td>
-                  <td>AUDITORIA SEM 2</td>
-                  <td>30 Ago</td>
-                  <td>5</td>
-                  <td>10 <span class="pie">1/10</span></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="table table-striped" >
+                <thead>
+                  <tr>
+                    <td></td>
+                    <th>TITULO</th>
+                    <th>FECHA</th>
+                    <th>OBS</th>
+                    <th>ACC</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><img src="./images/sem-ver.png" alt="ver"></td>
+                    <td>AUDITORIA SEM 1</td>
+                    <td>10 Feb</td>
+                    <td>3</td>
+                    <td>50 <span class="pie">5/10</span></td>
+                  </tr>
+                  <tr>
+                    <td><img src="./images/sem-roj.png" alt="roj"></td>
+                    <td>AUDITORIA SEM 2</td>
+                    <td>30 Ago</td>
+                    <td>5</td>
+                    <td>10 <span class="pie">1/10</span></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
@@ -261,10 +269,10 @@
           <div class="panel-heading">ACCIDENTES E INCIDENTES</div>
           <div class="panel-body">
             <div class="row vertical-align">
-              <div class="col-sm-6">
+              <div class="col-xs-6">
                 <canvas id="accChart" class="chart" width="100px" height="100px"></canvas>
               </div>
-              <div class="col-sm-6" style="padding: 0;">
+              <div class="col-xs-6" style="padding: 0;">
                 <ul style="padding: 0;">
                   <li>
                     <strong>150</strong> Incidentes
@@ -295,10 +303,10 @@
           <div class="panel-heading">COMITE DE SEGURIDAD</div>
           <div class="panel-body">
             <div class="row vertical-align">
-              <div class="col-sm-6">
+              <div class="col-xs-6">
                 <canvas id="comChart" class="chart" width="100px" height="100px"></canvas>
               </div>
-              <div class="col-sm-6" style="padding: 0;">
+              <div class="col-xs-6" style="padding: 0;">
                 <ul style="padding: 0;">
                   <li>
                     <strong>5</strong> Reuniones Ordinarias
