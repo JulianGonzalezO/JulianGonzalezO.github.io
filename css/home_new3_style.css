@@ -1,0 +1,11 @@
+.container{
+  width: 95%;
+}
+.table-container{
+  max-height: 160px;
+  overflow: auto;
+}
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
